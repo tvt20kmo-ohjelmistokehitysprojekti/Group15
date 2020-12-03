@@ -141,7 +141,7 @@ class Book extends REST_Controller {
             // Set the response and exit
             $this->response([
                 'status' => FALSE,
-                'message' => 'Can not update data'
+                'message' => 'Cannot update data'
             ], REST_Controller::HTTP_CONFLICT); // CAN NOT CREATE (409) being the HTTP response code
         }
     }
