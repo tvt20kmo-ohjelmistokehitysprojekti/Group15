@@ -49,7 +49,7 @@ class Atm extends REST_Controller {
 
     public function holderid_get(){
       $this->load->model('Atm_model');
-     $card_id=$this->get('kortin_id');
+      $card_id=$this->get('kortin_id');
       $result=$this->Atm_model->account_holder_id($card_id);
 
       if($result>0){
@@ -63,7 +63,7 @@ class Atm extends REST_Controller {
 
     public function name_get(){
       $this->load->model('Atm_model');
-      $id=$this->get('first_id');
+      $id=$this->uri->segment(4);
       $result=$this->Atm_model->get_name($id);
 
       if($result>0){
