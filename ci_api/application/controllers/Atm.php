@@ -132,3 +132,4 @@ class Atm extends REST_Controller {
         }
         echo json_encode($result);
     } */
+    
